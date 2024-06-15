@@ -1,0 +1,41 @@
+#home-page {
+    width: 100%;
+    height: 100%;
+}
+
+#home-page-landing {
+    width: 100%;
+    height: 100%;
+    background-image: url("src/assets/home_background.png");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    min-height: 800px;
+}
+
+#landing-left {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-left-content {
+    text-align: right;
+    padding: 1em 1em 1em 3em;
+}
+
+#landing-left-content h1 {
+    font-size: 5em;
+}
+
+#landing-left-content p {
+    font-size: 3em;
+}
+
+#landing-left-content button {
+    font-size: 2em;
+    padding: .5em;
+}
