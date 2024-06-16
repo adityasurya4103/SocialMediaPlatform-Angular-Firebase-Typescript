@@ -47,8 +47,10 @@ export class PostFeedComponent implements OnInit {
 }
 
 export interface PostData {
-  comment: string;
-  creatorId: string;
-  imageUrl?: string;
   postId: string;
+  creatorId: string;
+  comment: string;
+  imageUrl?: string;
+  likes: number  ;
+  likedBy: string[]; // Add this property
 }

@@ -142,6 +142,8 @@ export class CreatePostComponent implements OnInit {
                   data: {
                     comment: comment,
                     creatorId: currentUser.uid,
+                    likes: 0, // Initialize likes to zero
+                    likedBy: [] ,// Initialize likedBy as an empty array
                     imageUrl: downloadUrl,
                     timestamp: FirebaseTSApp.getFirestoreTimestamp()
                   },
@@ -163,7 +165,9 @@ export class CreatePostComponent implements OnInit {
             data: {
               comment: comment,
               creatorId: currentUser.uid,
-              timestamp: FirebaseTSApp.getFirestoreTimestamp()
+              timestamp: FirebaseTSApp.getFirestoreTimestamp(),
+              likes: 0, // Initialize likes to zero
+              likedBy: [] // Initialize likedBy as an empty array
             },
             onComplete: (docId) => {
               this.dialog.close();
