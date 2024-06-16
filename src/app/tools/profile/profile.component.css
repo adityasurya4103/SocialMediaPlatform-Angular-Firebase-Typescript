@@ -1,0 +1,44 @@
+#profile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgb(29, 29, 29);
+    z-index: 9;
+    transition-duration: .5s;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    width: 100vw;
+}
+
+.idle {
+    width: 0;
+}
+
+#profile-content {
+    width: 100%;
+    max-width: 500px;
+    padding: 2em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: .5em;
+    resize: none;
+    outline: none;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}

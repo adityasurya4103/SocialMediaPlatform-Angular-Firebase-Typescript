@@ -1,0 +1,10 @@
+
+
+
+<div id="profile" [ngClass]="{'active': show, 'idle': !show}">
+    <div id="profile-content">
+        <input #nameInput placeholder="Name">
+        <textarea #descriptionInput placeholder="Description"></textarea>
+        <button (click)="onContinueClick(nameInput, descriptionInput)" mat-flat-button color="warn">Continue</button>
+    </div>
+</div>

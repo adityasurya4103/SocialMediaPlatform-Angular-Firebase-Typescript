@@ -1,0 +1,23 @@
+.action-item {
+    margin-left: .5em;
+    cursor: pointer;
+}
+mat-card {
+    border: 1px solid #888; /* Darker gray border */
+    border-radius: 8px; /* Make edges rounded */
+    overflow: hidden; /* Ensure children respect the border-radius */
+    padding: 1em; /* Add padding to the card */
+  }
+  
+  .image-wrapper {
+    display: flex;
+    justify-content: center; /* Center-align the image horizontally */
+    margin: 0.5em 0; /* Add vertical margin around the image wrapper */
+  }
+  
+  mat-card img {
+    border-radius: 8px; /* Make the corners of the image rounded */
+    max-width: calc(100% - 1em); /* Ensure the image doesn't overflow the card's width */
+    display: block;
+  }
+  
