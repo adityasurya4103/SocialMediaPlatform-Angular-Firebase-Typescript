@@ -9,12 +9,12 @@
     <img mat-card-image src="{{postData?.imageUrl}}">
   </div>
   <mat-card-content>
-    {{postData?.comment}}
+    {{postData.comment}}
   </mat-card-content>
   <mat-card-actions>
     <mat-icon (click)="onReplyClick()" class="action-item" color="warn">chat_bubble_outline</mat-icon>
     <mat-icon (click)="onLikeClick()" class="action-item" color="warn">{{isLiked ? 'favorite' : 'favorite_border'}}</mat-icon>
-    <span>{{postData?.likes}}</span>
+    <span>{{postData.likes}}</span>
     <mat-icon class="action-item" color="warn">save</mat-icon>
   </mat-card-actions>
 </mat-card>
